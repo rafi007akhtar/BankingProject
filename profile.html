@@ -13,7 +13,17 @@
         <!-- STYLINGS -->
         <link rel="stylesheet" href="common-styles.css">
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Cinzel');
+            @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Cinzel|PT+Serif');
+            
+            body {
+                background-color: floralwhite;
+            }
+            h2 {
+                font-family: "PT Serif";
+            }
+            h4 {
+                font-weight: 900;
+            }
 
             #side_panel
             {
@@ -25,6 +35,10 @@
                 overflow-x: auto;
                 overflow-y: auto;
                 font-family: "Bree Serif";
+            }
+            #curr_bal {
+                border: 4px solid;
+                border-radius: 100px;
             }
             
             .side {
@@ -43,6 +57,10 @@
             .current {
                 border: 1px solid;
                 padding: 3px;
+            }
+            .curr_bal {
+                font-family: "Cinzel";
+                font-weight: 600;
             }
             
             #side_panel::-webkit-scrollbar {
@@ -106,11 +124,14 @@
             <!-- SIDE PANEL ENDS -->
 
             <section id="welcome_post" class="col-9">
-                <h2>Welcome, <span id="prof_name">nameplaceholder</span> </h2>
+                <h2>Welcome, <span id="prof_name">Rafi.</span> </h2>
+                <h4 style="font-weight: 300;">It's good to have you here</h4>   
                 <br>
-                <h4>It's good to have you here</h4>   
                 
-                Your current balance is ₹ <span id="curr_bal">balanceplaceholder</span>
+                <div class="text-center curr_bal"> 
+                    <h4>CURRENT BALACE IN YOUR ACCOUNT</h4> 
+                    <h1 id="curr_bal" class="btn-info">₹ 1083209</h1>
+                </div>
             </section>
         </div>
                 
