@@ -128,16 +128,41 @@
                     <li>Permanent loss of your account balance (so <a href="money_transfer.html">transfer your money</a> to a different account first). </li>
                     <li>Permanent loss of your account data, settings, and details.</li>
                 </ul>
+
+                By pressing the button, you understand the shortcomings as described in <a href="#">here</a>. <br> <br>
                 
-                <form>
-                    <h3 style="font-weight: 300;" >
-                        Enter your password to confirm deletion
-                        <input type="password" class="form-control" required>
-                    </h3>
-                    
-                    <div class="g-recaptcha" data-sitekey="6Ld_qjQUAAAAADjv2scrqpvXK4OrBZALRJFMANpP"></div> <br>
-                    <button class="btn btn-danger" type="submit">Delete my account</button>
-                </form>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#delete" >
+                  Take me to deletion
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="delete" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Confirm deletion</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <form>
+                          <div class="modal-body">
+                              Enter password to confirm deletion
+                              <input type="password" class="form-control" required>
+                              <br>
+                              Prove you are a human
+                              <div class="g-recaptcha" data-sitekey="6Ld_qjQUAAAAADjv2scrqpvXK4OrBZALRJFMANpP"></div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-danger">Delete my account</button>
+                          </div>
+                      </form>
+                      
+                    </div>
+                  </div>
+                </div>
                 
                 
             </section>
