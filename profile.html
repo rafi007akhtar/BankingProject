@@ -82,7 +82,7 @@
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: goldenrod">
             <img src="images/logo.jpg" width="50px">
             <a class="navbar-brand" href="index.html">&nbsp;Central Bank</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,7 +105,7 @@
             <section id="side_panel" class="col-3">
                 <img src="images/logo.jpg" class="container btn">
                 <!-- OPERATIONS -->
-                <a href="#" class="current side">Current balance</a> <br> <br>
+                <a href="#" class="current side">Account status</a> <br> <br>
                 
                 <a href="#" class="side">Money Transfer</a> <br> <br>
                 
@@ -125,13 +125,24 @@
 
             <section id="welcome_post" class="col-9">
                 <h2>Welcome, <span id="prof_name">Rafi.</span> </h2>
-                <h4 style="font-weight: 300;">It's good to have you here</h4>   
+                <h4 style="font-weight: 300;">It's good to have you here.</h4>   
                 <br>
                 
+                <div class="text-center curr_bal"> 
+                    <h4>ACCOUNT NUMBER</h4> 
+                    <h1 id="curr_bal" class="btn-info">XXXXXXX</h1>
+                </div>
+                <br>
                 <div class="text-center curr_bal"> 
                     <h4>CURRENT BALACE IN YOUR ACCOUNT</h4> 
                     <h1 id="curr_bal" class="btn-info">₹ 1083209</h1>
                 </div>
+                <br>
+                <div class="text-center curr_bal"> 
+                    <h4>ACCOUNT TYPE</h4> 
+                    <h1 id="curr_bal" class="btn-info">SAVINGS</h1>
+                </div>
+                
             </section>
         </div>
                 
