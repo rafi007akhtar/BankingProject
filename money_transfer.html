@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Central Bank | Money Transfer</title>
+        
+        <!-- CSS FRAMEWORKS REQUIRED -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- STYLINGS -->
+        <link rel="stylesheet" href="common-styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Cinzel|PT+Serif');
+            
+            body {
+                background-color: floralwhite;
+            }
+            h2 {
+                font-family: "PT Serif";
+            }
+
+            #side_panel
+            {
+                font-size: 16px;
+                font-family: "Titillium Web";
+                background-color: rgb(170, 95, 57);
+                margin-top: -7px;
+                margin-left: -10px;
+                height: 540px;
+                overflow-x: auto;
+                overflow-y: auto;
+            }
+            #curr_bal {
+                border: 4px solid;
+                border-radius: 100px;
+            }
+            
+            .side {
+                color: aliceblue;
+            }
+            .side:hover {
+                color: mediumaquamarine;
+            }
+            .warning {
+                color: yellow;
+            }
+            .danger {
+                color: #FF8723;
+                font-weight: 900;
+            }
+            .current {
+                border: 1px solid;
+                padding: 3px;
+            }
+            .curr_bal {
+                font-family: "Cinzel";
+                font-weight: 600;
+            }
+            
+            #side_panel::-webkit-scrollbar {
+                width: 7px;
+            }
+            #side_panel::-webkit-scrollbar:hover {
+                width: 12px;
+            }
+            #side_panel::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+                border-radius: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: goldenrod">
+            <img src="images/logo.jpg" width="50px">
+            <a class="navbar-brand" href="index.html">&nbsp;Central Bank</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="create_account.html">Create new account</a>
+                    <a class="nav-item nav-link" href="index.html">Logout</a>
+                </div>
+            </div>
+        </nav>
+        
+        <br> <br> <br>
+        
+        <div class="container-fluid row">
+            
+            <!--SIDE PANEL BEGINS -->
+            <section id="side_panel" class="col-3">
+                <img src="images/logo.jpg" class="container btn">
+                <!-- OPERATIONS -->
+                <a href="#" class="side">Account status</a> <br> <br>
+                
+                <a href="#" class="current side">Money Transfer</a> <br> <br>
+                
+                <a href="#" class="side">Loan application</a> <br> <br>
+                
+                <a href="#" class="side">eWallet&trade;</a> <br> <br>
+                
+                <a href="#" class="side">Online Paymet</a> <br> <br>
+                
+                <a href="#" class="side">Account settings</a> <br> <br>
+                
+                <a href="#" class="side warning">Edit account details</a> <br> <br>
+                
+                <a href="#" class="side danger">Delete account</a> <br> <br>                
+            </section>
+            <!-- SIDE PANEL ENDS -->
+
+            <section id="welcome_post" class="col-9">
+                <h2>Welcome, <span id="prof_name">Rafi.</span> </h2>
+                <h4 style="font-weight: 300;">It's good to have you here.</h4>   
+                <br>   
+                
+                <h3 style="font-weight: 300;">
+                    Enter the destination account number 
+                    <input type="number" class="form-control">
+                </h3>
+                <br>
+                <h3 style="font-weight: 300;">
+                    Enter the amount to be transferred (₹)
+                    <input type="number" class="form-control">
+                </h3>
+                <br>
+                <button class="btn btn-primary">Transfer amount</button>
+            </section>
+        </div>
+                
+        
+        <!-- FOOTER -->
+        <section class="foot">
+            <div class="text-center">
+                &copy; Website created with <i class="fa fa-heart" style="color: green"></i> by <a href="https://github.com/rafi007akhtar" target="_blank">Md Rafi Akhtar</a> and <a href="https://github.com/hasnain003" target="_blank">Md Hasnain </a>    
+                <br>
+                <i class="fa fa-github"></i> Contribute to this project on <a href="https://github.com/rafi007akhtar/BankingProject" target="_blank">GitHub</a>
+            </div>
+        </section>
+        
+        <!-- JS LIBRARIES REQUIRED -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    </body>
+</html>
