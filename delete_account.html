@@ -72,6 +72,9 @@
             }
         </style>
         
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+        
     </head>
     
     <body>
@@ -116,12 +119,8 @@
             </section>
             <!-- SIDE PANEL ENDS -->
 
-            <section id="welcome_post" class="col-9">
-                <!--<h2>Welcome, <span id="prof_name">Rafi.</span> </h2>
-                <h4 style="font-weight: 300;">It's good to have you here.</h4>   
-                <br>-->
-                
-                <h3 style="font-weight: 300;" >Note that deleting this account will lead to:</h3>
+            <section id="welcome_post" class="col-9">   
+                <h3 style="font-weight: 300;" >Deleting the account means:</h3>
                 <ul type="square">
                     <li>Permanent loss of your account balance (so <a href="money_transfer.html">transfer your money</a> to a different account first). </li>
                     <li>Permanent loss of your account data, settings, and details.</li>
@@ -133,12 +132,7 @@
                         <input type="password" class="form-control" required>
                     </h3>
                     
-                    <input type="checkbox" required> 
-                        I understand the process, and I have taken the necessary precautions as mentioned in <a href="#">Terms and Conditions</a>, and am willing to delete this account.
-                        <br> <br>
-                    
-                    <div class="g-recaptcha" data-sitekey="6Ld_qjQUAAAAADjv2scrqpvXK4OrBZALRJFMANpP"></div>
-
+                    <div class="g-recaptcha" data-sitekey="6Ld_qjQUAAAAADjv2scrqpvXK4OrBZALRJFMANpP" ></div> <br>
                     <button class="btn btn-danger" type="submit">Delete my account</button>
                 </form>
                 
