@@ -122,6 +122,7 @@
                 </h4>
                 <br>
                 
+                <!-- EDIT BASIC DETAILS -->
                 <button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#basic">Edit basic details</button>
                 <div class="modal fade" id="basic" tabindex="-1" role="dialog" aria-labelledby="basic" aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -148,7 +149,6 @@
                               <input type="number" class="form-control" placeholder="75000" disabled>
                               Occupation:
                               <input type="email" class="form-control" placeholder="Student">
-                              <br>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -164,15 +164,101 @@
                 (Email, Mobile number, Occupation)
                 <br> <br>
                 
-                <button type="button" class="btn btn-warning btn-block">Edit present location</button> 
+                <!-- EDIT PRESENT LOCATION -->
+                <button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#location">Edit present location</button>
+                
+                <div class="modal fade" id="location" tabindex="-1" role="dialog" aria-labelledby="location" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit present location</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <form>
+                          <div class="modal-body">
+                              Country:
+                              <input type="text" class="form-control" placeholder="India">
+                              State:
+                              <input type="text" class="form-control" placeholder="West Bengal">
+                              City:
+                              <input type="text" class="form-control" placeholder="Kolkata">
+                              Street:
+                              <input type="text" class="form-control" placeholder="185 / 1, Park Street">
+                              Pincode:
+                              <input type="number" class="form-control" placeholder="700017">                         
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-warning">Edit details</button>
+                          </div>
+                      </form>
+                      
+                    </div>
+                  </div>
+                </div>
                 (Country, State, City, Street, Pincode)
                 <br> <br>
                 
-                <button type="button" class="btn btn-warning btn-block">Edit account details</button> 
+                <!-- EDIT ACCOUNT DETAILS -->
+                <button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#account">Edit account details</button> 
+                <div class="modal fade" id="account" tabindex="-1" role="dialog" aria-labelledby="account" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit account type</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                          Account type: <br>
+                          <input type="radio" checked> Savings
+                          <br>
+                          <span class="small">(Presently, we only support Savings accounts)</span>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
                 (Account type)
                 <br> <br>
                 
-                <button type="button" class="btn btn-danger btn-block">Edit password</button>
+                <!-- EDIT PASSWORD -->
+                <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#password">Edit password</button>
+                <div class="modal fade" id="password" tabindex="-1" role="dialog" aria-labelledby="password" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit password</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <form>
+                          <div class="modal-body">
+                              Enter previous password:
+                              <input type="passoword" class="form-control">
+                              Enter new password:
+                              <input type="passoword" class="form-control">
+                              Re-enter new password:
+                              <input type="passoword" class="form-control">
+                              Prove you are human
+                          <div class="g-recaptcha" data-sitekey="6Ld_qjQUAAAAADjv2scrqpvXK4OrBZALRJFMANpP"></div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-danger">Update password</button>
+                          </div>
+                      </form>
+                      
+                    </div>
+                  </div>
+                </div>
             
                 
             </section>
