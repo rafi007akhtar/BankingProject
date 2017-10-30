@@ -49,39 +49,39 @@
         <h6 class="text-center"><em>(All details are mandatory)</em></h6>
         <br>
         
-        <form class="container">
+        <form class="container" action="insert.php" method="post">
             <section class="form-control">
                 <h4>Enter basic details</h4>
                 <label class="row">
                     <span class="col">Account holder's full name</span>
-                    <input class="col form-control shrink" type="text" required>
+                    <input class="col form-control shrink" type="text" name="name" required>
                 </label>
                 <label class="row">
                     <span class="col">Sex</span>
                     <label class="col form-control shrink">
-                        <span class="col"><input type="radio" name="gender" value="female" required> Female </span>
-                        <span class="col"><input type="radio" name="gender" value="male" required> Male </span>
+                        <span class="col"><input type="radio" name="sex" value="female" required> Female </span>
+                        <span class="col"><input type="radio" name="sex" value="male" required> Male </span>
                     </label>
                 </label>
                 <label class="row">
                     <span class="col">Email</span>
-                    <input type="email" class="col form-control shrink">
+                    <input type="email" class="col form-control shrink" name="email">
                 </label>
                 <label class="row">
                     <span class="col">Mobile  number</span>
-                    <input type="tel" class="col form-control shrink" required>
+                    <input type="tel" class="col form-control shrink" required name="mob_number">
                 </label>
                 <label class="row">
                     <span class="col">Date of birth</span>
-                    <input type="date" class="col form-control shrink" required>
+                    <input type="date" class="col form-control shrink" required name="dob">
                 </label>
                 <label class="row">
                     <span class="col">Annual income (₹)</span>
-                    <input type="number" min="50000" class="col form-control shrink" required>
+                    <input type="number" min="50000" class="col form-control shrink" required name="annual_income">
                 </label>
                 <label class="row">
                     <span class="col">Occupation</span>
-                    <select class="col form-control shrink" required>
+                    <select class="col form-control shrink" required name="occupation">
                         <option>-Select one-</option>
                         <option>Service</option>
                         <option>Business</option>
@@ -98,7 +98,7 @@
                 <h4>Enter present location</h4>
                 <label class="row">
                 <span class="col">Present Country </span>
-                <select class="col form-control shrink" required>
+                <select class="col form-control shrink" required name="country">
                     <option> -Select one- </option>
                     <option>India</option>
                     <option>Others</option>
@@ -106,7 +106,7 @@
                 </label>
                 <label class="row">
                     <span class="col">Present State</span>
-                    <select class="col form-control shrink" required>
+                    <select class="col form-control shrink" required name="state">
                         <option>-Select one-</option>
                         <option>West Bengal</option>
                         <option>Others</option>
@@ -114,15 +114,15 @@
                 </label>
                 <label class="row">
                     <span class="col">Present City</span>
-                    <input class="col form-control shrink" type="text" required>
+                    <input class="col form-control shrink" type="text" required name="city">
                 </label>
                 <label class="row">
                     <span class="col">Street</span>
-                    <input class="col form-control shrink" type="text" required>
+                    <input class="col form-control shrink" type="text" required name="street">
                 </label>
                 <label class="row">
                     <span class="col">Pincode</span>
-                    <input class="col form-control shrink" type="number" required>
+                    <input class="col form-control shrink" type="number" required name="pincode">
                 </label>
             </section>
             
@@ -137,23 +137,23 @@
                 </label>
                 <label class="row">
                     <span class="col">Branch name</span>
-                    <input class="col form-control shrink" type="text" required>
+                    <input class="col form-control shrink" type="text" required name="branch_name">
                 </label>
                 <label class="row">
                     <span class="col">Branch code</span>
-                    <input class="col form-control shrink" type="text" required>
+                    <input class="col form-control shrink" type="text" required name="branch_code">
                 </label>
                 <label class="row">
                     <span class="col">Opening amount (₹)</span>
-                    <input class="col form-control shrink" type="number" min="1000" required>
+                    <input class="col form-control shrink" type="number" min="1000" required name="amount">
                 </label>
                 <label class="row">
                     <span class="col">Bank account type <br> <small>(Currently, we only support savings bank accounts)</small></span>
-                    <span class="col"><input type="radio" name="acc_type" value="savings" checked required> Savings</span>
+                    <span class="col"><input type="radio" value="savings" checked required name="account_type"> Savings</span>
                 </label>
                 <label class="row">
                     <span class="col">Account Password</span>
-                    <input class="col form-control shrink" type="password" required>
+                    <input class="col form-control shrink" type="password" required name="password">
                 </label>
             </section>
             
@@ -171,7 +171,7 @@
             
             <br>
             
-            <input type="submit" class="form-control btn btn-primary" value="Create account"
+            <input type="submit" class="form-control btn btn-primary" value="Create account" name="submit"
             />
             
         </form>
